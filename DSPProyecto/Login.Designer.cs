@@ -35,13 +35,13 @@ namespace DSPProyecto
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.Ocultar = new System.Windows.Forms.PictureBox();
             this.OMostrar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,7 +88,6 @@ namespace DSPProyecto
             this.button1.TabIndex = 5;
             this.button1.Text = "Iniciar Sesión";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -107,20 +106,10 @@ namespace DSPProyecto
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(126, 406);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Salir";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(62, 240);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(204, 24);
-            this.txtUsername.TabIndex = 8;
             // 
             // txtPassword
             // 
@@ -184,14 +173,24 @@ namespace DSPProyecto
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // txtUsername
+            // 
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(64, 240);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(173, 24);
+            this.txtUsername.TabIndex = 12;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(292, 447);
-            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -207,7 +206,6 @@ namespace DSPProyecto
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -229,10 +227,10 @@ namespace DSPProyecto
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox OMostrar;
         private System.Windows.Forms.PictureBox Ocultar;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }
 
