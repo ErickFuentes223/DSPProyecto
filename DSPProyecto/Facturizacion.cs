@@ -47,5 +47,10 @@ namespace DSPProyecto
             txtPago.Clear();
             txtProduct.Clear();
         }
+
+        private void Facturizacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

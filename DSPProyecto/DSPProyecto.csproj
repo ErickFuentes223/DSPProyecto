@@ -45,11 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmDel.Designer.cs">
+      <DependentUpon>ConfirmDel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Facturizacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Facturizacion.Designer.cs">
       <DependentUpon>Facturizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModProduct.Designer.cs">
+      <DependentUpon>ModProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistroUserAdmin.cs">
       <SubType>Form</SubType>
@@ -89,8 +107,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfirmDel.resx">
+      <DependentUpon>ConfirmDel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturizacion.resx">
       <DependentUpon>Facturizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModProduct.resx">
+      <DependentUpon>ModProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroUserAdmin.resx">
       <DependentUpon>RegistroUserAdmin.cs</DependentUpon>

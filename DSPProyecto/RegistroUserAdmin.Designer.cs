@@ -41,18 +41,18 @@ namespace DSPProyecto
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtUserReg = new System.Windows.Forms.TextBox();
-            this.txtPassReg = new System.Windows.Forms.TextBox();
-            this.txtRePassReg = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtRePassReg = new System.Windows.Forms.TextBox();
+            this.txtPassReg = new System.Windows.Forms.TextBox();
+            this.txtUserReg = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -227,22 +227,6 @@ namespace DSPProyecto
             this.splitContainer2.SplitterDistance = 300;
             this.splitContainer2.TabIndex = 0;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(302, 293);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 370);
-            this.panel4.TabIndex = 5;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -256,63 +240,49 @@ namespace DSPProyecto
             this.label5.TabIndex = 11;
             this.label5.Text = "Usuarios Registrados";
             // 
-            // label6
+            // dataGridView1
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(72, 17);
-            this.label6.Name = "label6";
-            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label6.Size = new System.Drawing.Size(100, 27);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Añadir";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 63);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(302, 293);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // txtUserReg
+            // label10
             // 
-            this.txtUserReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtUserReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserReg.Location = new System.Drawing.Point(19, 93);
-            this.txtUserReg.Multiline = true;
-            this.txtUserReg.Name = "txtUserReg";
-            this.txtUserReg.Size = new System.Drawing.Size(196, 24);
-            this.txtUserReg.TabIndex = 13;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Control;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(16, 190);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(142, 15);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Confirme Contraseña";
             // 
-            // txtPassReg
+            // label9
             // 
-            this.txtPassReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassReg.Location = new System.Drawing.Point(19, 152);
-            this.txtPassReg.Multiline = true;
-            this.txtPassReg.Name = "txtPassReg";
-            this.txtPassReg.Size = new System.Drawing.Size(196, 24);
-            this.txtPassReg.TabIndex = 14;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(16, 134);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 15);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Contraseña";
             // 
-            // txtRePassReg
+            // label8
             // 
-            this.txtRePassReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRePassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRePassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRePassReg.Location = new System.Drawing.Point(19, 209);
-            this.txtRePassReg.Multiline = true;
-            this.txtRePassReg.Name = "txtRePassReg";
-            this.txtRePassReg.Size = new System.Drawing.Size(196, 24);
-            this.txtRePassReg.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(19, 265);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 33);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(16, 75);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 15);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Usuario";
             // 
             // label7
             // 
@@ -327,41 +297,71 @@ namespace DSPProyecto
             this.label7.Text = "Limpiar campos";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // button1
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(16, 75);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 15);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Usuario";
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(19, 265);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 33);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // txtRePassReg
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(16, 134);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 15);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Contraseña";
+            this.txtRePassReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtRePassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRePassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRePassReg.Location = new System.Drawing.Point(19, 209);
+            this.txtRePassReg.Multiline = true;
+            this.txtRePassReg.Name = "txtRePassReg";
+            this.txtRePassReg.Size = new System.Drawing.Size(196, 24);
+            this.txtRePassReg.TabIndex = 15;
             // 
-            // label10
+            // txtPassReg
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(16, 190);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 15);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Confirme Contraseña";
+            this.txtPassReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassReg.Location = new System.Drawing.Point(19, 152);
+            this.txtPassReg.Multiline = true;
+            this.txtPassReg.Name = "txtPassReg";
+            this.txtPassReg.Size = new System.Drawing.Size(196, 24);
+            this.txtPassReg.TabIndex = 14;
+            // 
+            // txtUserReg
+            // 
+            this.txtUserReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUserReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUserReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserReg.Location = new System.Drawing.Point(19, 93);
+            this.txtUserReg.Multiline = true;
+            this.txtUserReg.Name = "txtUserReg";
+            this.txtUserReg.Size = new System.Drawing.Size(196, 24);
+            this.txtUserReg.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(72, 17);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label6.Size = new System.Drawing.Size(100, 27);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Añadir";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1, 370);
+            this.panel4.TabIndex = 5;
             // 
             // RegistroUserAdmin
             // 
@@ -372,7 +372,6 @@ namespace DSPProyecto
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroUserAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioSoya";

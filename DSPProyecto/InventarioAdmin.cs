@@ -38,7 +38,20 @@ namespace DSPProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            AddProduct CambioF = new AddProduct();
+            CambioF.Show();
+        }
 
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            ConfirmDel CambioF = new ConfirmDel();
+            CambioF.Show();
+        }
+
+        private void btnedit_Click(object sender, EventArgs e)
+        {
+            ModProduct CambioF = new ModProduct();
+            CambioF.Show();
         }
     }
 }

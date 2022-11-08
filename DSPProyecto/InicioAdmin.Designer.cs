@@ -70,7 +70,7 @@ namespace DSPProyecto
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(806, 75);
+            this.panel1.Size = new System.Drawing.Size(803, 75);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -222,7 +222,6 @@ namespace DSPProyecto
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InicioAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioSoya";
