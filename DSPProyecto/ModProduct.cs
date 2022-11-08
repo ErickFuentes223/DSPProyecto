@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace DSPProyecto
 {
-    public partial class InicioSoya : Form
+    public partial class ModProduct : Form
     {
-        public InicioSoya()
+        public ModProduct()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
