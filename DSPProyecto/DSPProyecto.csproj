@@ -45,11 +45,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InicioSoya.cs">
+    <Compile Include="Facturizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioSoya.Designer.cs">
-      <DependentUpon>InicioSoya.cs</DependentUpon>
+    <Compile Include="Facturizacion.Designer.cs">
+      <DependentUpon>Facturizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUserAdmin.Designer.cs">
+      <DependentUpon>RegistroUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventarioUser.Designer.cs">
+      <DependentUpon>InventarioUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventarioAdmin.Designer.cs">
+      <DependentUpon>InventarioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioUser.Designer.cs">
+      <DependentUpon>InicioUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAdmin.Designer.cs">
+      <DependentUpon>InicioAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -59,6 +89,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Facturizacion.resx">
+      <DependentUpon>Facturizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUserAdmin.resx">
+      <DependentUpon>RegistroUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioUser.resx">
+      <DependentUpon>InventarioUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventarioAdmin.resx">
+      <DependentUpon>InventarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioUser.resx">
+      <DependentUpon>InicioUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAdmin.resx">
+      <DependentUpon>InicioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
