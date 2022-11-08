@@ -37,11 +37,7 @@ namespace DSPProyecto
                 this.Hide();
 
             }
-            if else
-    {
-
-
-    }
+ 
             else
             {
                 MessageBox.Show("El usuario y/o contraseña son incorrectos, intente de nuevo");
