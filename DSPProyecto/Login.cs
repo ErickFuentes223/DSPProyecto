@@ -31,24 +31,32 @@ namespace DSPProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text=="admin" && txtPassword.Text=="password")
+
+             if (txtUsername.Text == "admin" && txtPassword.Text == "password")
             {
-                new InicioSoya().Show();
-                this.Hide();
+                InicioAdmin CambioF = new InicioAdmin();
+                CambioF.Show();
+                this.Close();
 
             }
-            if else
-    {
-
-
-    }
             else
-            {
-                MessageBox.Show("El usuario y/o contraseña son incorrectos, intente de nuevo");
-                txtUsername.Clear();
-                txtPassword.Clear();
-                txtUsername.Focus();
+             {
+                if (txtUsername.Text == "user" && txtPassword.Text == "password")
+                {
+                    InicioUser CambioF = new InicioUser();
+                    CambioF.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("El usuario y/o contraseña son incorrectos, intente de nuevo");
+                    txtUsername.Clear();
+                    txtPassword.Clear();
+                    txtUsername.Focus();
+                }
+
             }
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -66,6 +74,17 @@ namespace DSPProyecto
         {
             OMostrar.BringToFront();
             txtPassword.PasswordChar = '*';
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '*';
+
         }
     }
 }
