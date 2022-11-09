@@ -36,17 +36,17 @@ namespace DSPProyecto
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.Ocultar = new System.Windows.Forms.PictureBox();
-            this.OMostrar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).BeginInit();
+            this.OMostrar = new System.Windows.Forms.PictureBox();
+            this.Ocultar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,6 +88,7 @@ namespace DSPProyecto
             this.button1.TabIndex = 5;
             this.button1.Text = "Iniciar Sesión";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -120,28 +121,7 @@ namespace DSPProyecto
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(173, 24);
             this.txtPassword.TabIndex = 9;
-            // 
-            // Ocultar
-            // 
-            this.Ocultar.Image = global::DSPProyecto.Properties.Resources.hidden;
-            this.Ocultar.Location = new System.Drawing.Point(240, 291);
-            this.Ocultar.Name = "Ocultar";
-            this.Ocultar.Size = new System.Drawing.Size(25, 25);
-            this.Ocultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Ocultar.TabIndex = 11;
-            this.Ocultar.TabStop = false;
-            this.Ocultar.Click += new System.EventHandler(this.Ocultar_Click);
-            // 
-            // OMostrar
-            // 
-            this.OMostrar.Image = global::DSPProyecto.Properties.Resources.eye;
-            this.OMostrar.Location = new System.Drawing.Point(240, 291);
-            this.OMostrar.Name = "OMostrar";
-            this.OMostrar.Size = new System.Drawing.Size(25, 25);
-            this.OMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.OMostrar.TabIndex = 10;
-            this.OMostrar.TabStop = false;
-            this.OMostrar.Click += new System.EventHandler(this.OMostrar_Click);
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // pictureBox3
             // 
@@ -166,7 +146,7 @@ namespace DSPProyecto
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DSPProyecto.Properties.Resources.donbosco;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 136);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,6 +162,29 @@ namespace DSPProyecto
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(173, 24);
             this.txtUsername.TabIndex = 12;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // OMostrar
+            // 
+            this.OMostrar.Image = global::DSPProyecto.Properties.Resources.eye;
+            this.OMostrar.Location = new System.Drawing.Point(240, 291);
+            this.OMostrar.Name = "OMostrar";
+            this.OMostrar.Size = new System.Drawing.Size(25, 25);
+            this.OMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.OMostrar.TabIndex = 10;
+            this.OMostrar.TabStop = false;
+            this.OMostrar.Click += new System.EventHandler(this.OMostrar_Click);
+            // 
+            // Ocultar
+            // 
+            this.Ocultar.Image = global::DSPProyecto.Properties.Resources.hidden;
+            this.Ocultar.Location = new System.Drawing.Point(240, 291);
+            this.Ocultar.Name = "Ocultar";
+            this.Ocultar.Size = new System.Drawing.Size(25, 25);
+            this.Ocultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Ocultar.TabIndex = 11;
+            this.Ocultar.TabStop = false;
+            this.Ocultar.Click += new System.EventHandler(this.Ocultar_Click);
             // 
             // Login
             // 
@@ -206,11 +209,11 @@ namespace DSPProyecto
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OMostrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ocultar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
