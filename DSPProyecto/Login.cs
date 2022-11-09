@@ -15,6 +15,7 @@ namespace DSPProyecto
         public Login()
         {
             InitializeComponent();
+            Conexion c = new Conexion();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -39,10 +40,6 @@ namespace DSPProyecto
                 this.Close();
 
             }
-<<<<<<< HEAD
- 
-=======
->>>>>>> ErickFuentes
             else
              {
                 if (txtUsername.Text == "user" && txtPassword.Text == "password")
