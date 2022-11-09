@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace DSPProyecto
@@ -16,6 +10,7 @@ namespace DSPProyecto
         {
             InitializeComponent();
             Conexion c = new Conexion();
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -32,33 +27,55 @@ namespace DSPProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            login();
+        }
 
-             if (txtUsername.Text == "admin" && txtPassword.Text == "password")
+        public void login()
+        {
+            SqlConnection cnx;
+            cnx = new SqlConnection("Data Source=.;Initial Catalog=FarmaciaDonBoscoDSP;Integrated Security=True");
+            cnx.Open();
+
+
+                    SqlCommand cmNickname = new SqlCommand("Select nickname from usuarios where nickname='"+txtUsername+"'", cnx);
+            SqlDataReader drNickname = cmNickname.ExecuteReader();
+
+            SqlCommand cmPasswd = new SqlCommand("Select contraseña from usuarios where nickname='" + txtUsername + "' AND contraseña='" + txtPassword + "'", cnx);
+            SqlDataReader drPasswd = cmPasswd.ExecuteReader();
+
+            SqlCommand cmRol = new SqlCommand("Select rolUsuario from usuarios where nickname='" + txtUsername + "' AND contraseña='" + txtPassword + "' AND rolUsuario='Administrador'", cnx);
+            SqlDataReader drRol = cmRol.ExecuteReader();
+
+            if (drNickname.Read())
             {
-                InicioAdmin CambioF = new InicioAdmin();
-                CambioF.Show();
-                this.Close();
-
-            }
-            else
-             {
-                if (txtUsername.Text == "user" && txtPassword.Text == "password")
+                if (drPasswd.Read())
                 {
-                    InicioUser CambioF = new InicioUser();
-                    CambioF.Show();
-                    this.Close();
+                    if(drRol.Read()){
+                        MessageBox.Show("Bienvenido, Inicio de Seccion SDatisfactorio", "Farmacia Don Bosco", MessageBoxButtons.OK);
+                        InicioAdmin CambioA = new InicioAdmin();
+                        CambioA.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bienvenido, Inicio de Seccion SDatisfactorio", "Farmacia Don Bosco", MessageBoxButtons.OK);
+                        InicioUser CambioA = new InicioUser();
+                        CambioA.Show();
+                        this.Close();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("El usuario y/o contraseña son incorrectos, intente de nuevo");
-                    txtUsername.Clear();
-                    txtPassword.Clear();
-                    txtUsername.Focus();
+                    MessageBox.Show("Error!!! Credenciales Invalidas", "Farmacia Don Bosco", MessageBoxButtons.OK);
                 }
-
+            }
+            else
+            {
+                MessageBox.Show("Error!!! Credenciales Invalidas", "Farmacia Don Bosco", MessageBoxButtons.OK);
             }
 
         }
+        
 
         private void label3_Click(object sender, EventArgs e)
         {

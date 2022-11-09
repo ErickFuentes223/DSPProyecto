@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace DSPProyecto
 {
-    internal class Conexion
+    internal class Conexion : Login
     {
         SqlConnection cnx;
 
