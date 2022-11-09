@@ -9,13 +9,13 @@ namespace DSPProyecto
         public Login()
         {
             InitializeComponent();
-            Conexion c = new Conexion();
+            conexion c = new conexion();
 
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -37,37 +37,27 @@ namespace DSPProyecto
             cnx.Open();
 
 
-                    SqlCommand cmNickname = new SqlCommand("Select nickname from usuarios where nickname='"+txtUsername+"'", cnx);
-            SqlDataReader drNickname = cmNickname.ExecuteReader();
+            SqlCommand cm = new SqlCommand("Select * from usuarios where nickname='"+txtUsername.Text+"' AND contraseña='"+ txtPassword.Text +"'", cnx);
+            SqlDataReader dr = cm.ExecuteReader();
 
-            SqlCommand cmPasswd = new SqlCommand("Select contraseña from usuarios where nickname='" + txtUsername + "' AND contraseña='" + txtPassword + "'", cnx);
-            SqlDataReader drPasswd = cmPasswd.ExecuteReader();
-
-            SqlCommand cmRol = new SqlCommand("Select rolUsuario from usuarios where nickname='" + txtUsername + "' AND contraseña='" + txtPassword + "' AND rolUsuario='Administrador'", cnx);
-            SqlDataReader drRol = cmRol.ExecuteReader();
-
-            if (drNickname.Read())
+            if (dr.Read())
             {
-                if (drPasswd.Read())
+                string rol = (string)dr.GetValue(4);
+
+                if (rol == "Administrador")
                 {
-                    if(drRol.Read()){
-                        MessageBox.Show("Bienvenido, Inicio de Seccion SDatisfactorio", "Farmacia Don Bosco", MessageBoxButtons.OK);
-                        InicioAdmin CambioA = new InicioAdmin();
-                        CambioA.Show();
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Bienvenido, Inicio de Seccion SDatisfactorio", "Farmacia Don Bosco", MessageBoxButtons.OK);
-                        InicioUser CambioA = new InicioUser();
-                        CambioA.Show();
-                        this.Close();
-                    }
+                    InicioAdmin AdminMenu = new InicioAdmin();
+                    AdminMenu.Show();
+                    MessageBox.Show("Bienvenido "+rol, "Farmacia Don Bosco", MessageBoxButtons.OK);
+                    dr.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Error!!! Credenciales Invalidas", "Farmacia Don Bosco", MessageBoxButtons.OK);
+                    InicioUser Usermenu = new InicioUser();
+                    Usermenu.Show();
+                    MessageBox.Show("Bienvenido!!!"+rol, "Farmacia Don Bosco", MessageBoxButtons.OK);
                 }
+
             }
             else
             {
