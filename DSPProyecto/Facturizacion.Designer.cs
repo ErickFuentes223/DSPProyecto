@@ -34,6 +34,7 @@ namespace DSPProyecto
             this.panel2 = new System.Windows.Forms.Panel();
             this.logout = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,22 +44,17 @@ namespace DSPProyecto
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.txtDescuento = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtCantidad = new System.Windows.Forms.NumericUpDown();
             this.txtProduct = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtPago = new System.Windows.Forms.TextBox();
             this.txtNameCustomer = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -73,7 +69,8 @@ namespace DSPProyecto
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescuento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +122,7 @@ namespace DSPProyecto
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.dateTimePicker2);
             this.splitContainer1.Panel1.Controls.Add(this.btnRegresar);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
@@ -139,6 +137,23 @@ namespace DSPProyecto
             this.splitContainer1.Size = new System.Drawing.Size(803, 378);
             this.splitContainer1.SplitterDistance = 267;
             this.splitContainer1.TabIndex = 2;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker2.Checked = false;
+            this.dateTimePicker2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dateTimePicker2.Enabled = false;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(10, 345);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(247, 20);
+            this.dateTimePicker2.TabIndex = 31;
+            this.dateTimePicker2.Visible = false;
             // 
             // btnRegresar
             // 
@@ -223,22 +238,17 @@ namespace DSPProyecto
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.radioButton3);
-            this.splitContainer2.Panel2.Controls.Add(this.radioButton2);
-            this.splitContainer2.Panel2.Controls.Add(this.radioButton1);
+            this.splitContainer2.Panel2.Controls.Add(this.txtDescuento);
             this.splitContainer2.Panel2.Controls.Add(this.label13);
             this.splitContainer2.Panel2.Controls.Add(this.label12);
             this.splitContainer2.Panel2.Controls.Add(this.comboBox1);
             this.splitContainer2.Panel2.Controls.Add(this.label11);
-            this.splitContainer2.Panel2.Controls.Add(this.numericUpDown1);
+            this.splitContainer2.Panel2.Controls.Add(this.txtCantidad);
             this.splitContainer2.Panel2.Controls.Add(this.txtProduct);
-            this.splitContainer2.Panel2.Controls.Add(this.dateTimePicker1);
-            this.splitContainer2.Panel2.Controls.Add(this.label10);
             this.splitContainer2.Panel2.Controls.Add(this.label9);
             this.splitContainer2.Panel2.Controls.Add(this.label8);
             this.splitContainer2.Panel2.Controls.Add(this.label7);
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Panel2.Controls.Add(this.txtPago);
             this.splitContainer2.Panel2.Controls.Add(this.txtNameCustomer);
             this.splitContainer2.Panel2.Controls.Add(this.label6);
             this.splitContainer2.Panel2.Controls.Add(this.panel4);
@@ -267,41 +277,12 @@ namespace DSPProyecto
             this.dataGridView1.Size = new System.Drawing.Size(302, 293);
             this.dataGridView1.TabIndex = 0;
             // 
-            // radioButton3
+            // txtDescuento
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ForeColor = System.Drawing.Color.Black;
-            this.radioButton3.Location = new System.Drawing.Point(172, 294);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(45, 17);
-            this.radioButton3.TabIndex = 30;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "20%";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(92, 292);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
-            this.radioButton2.TabIndex = 29;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "15%";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(13, 292);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(45, 17);
-            this.radioButton1.TabIndex = 28;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "10%";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtDescuento.Location = new System.Drawing.Point(10, 250);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(207, 20);
+            this.txtDescuento.TabIndex = 25;
             // 
             // label13
             // 
@@ -309,7 +290,7 @@ namespace DSPProyecto
             this.label13.BackColor = System.Drawing.SystemColors.Control;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(10, 275);
+            this.label13.Location = new System.Drawing.Point(10, 232);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(75, 15);
             this.label13.TabIndex = 24;
@@ -321,7 +302,7 @@ namespace DSPProyecto
             this.label12.BackColor = System.Drawing.SystemColors.Control;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(10, 233);
+            this.label12.Location = new System.Drawing.Point(10, 190);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(112, 15);
             this.label12.TabIndex = 23;
@@ -334,7 +315,7 @@ namespace DSPProyecto
             "Contado",
             "Tarjeta",
             "Bitcoin"});
-            this.comboBox1.Location = new System.Drawing.Point(10, 251);
+            this.comboBox1.Location = new System.Drawing.Point(10, 208);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 21);
             this.comboBox1.TabIndex = 22;
@@ -345,49 +326,29 @@ namespace DSPProyecto
             this.label11.BackColor = System.Drawing.SystemColors.Control;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(10, 154);
+            this.label11.Location = new System.Drawing.Point(10, 141);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 15);
             this.label11.TabIndex = 21;
             this.label11.Text = "Cantidad";
             // 
-            // numericUpDown1
+            // txtCantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(13, 172);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(202, 20);
-            this.numericUpDown1.TabIndex = 12;
+            this.txtCantidad.Location = new System.Drawing.Point(13, 159);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(202, 20);
+            this.txtCantidad.TabIndex = 12;
             // 
             // txtProduct
             // 
             this.txtProduct.BackColor = System.Drawing.SystemColors.Window;
             this.txtProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduct.Location = new System.Drawing.Point(13, 127);
+            this.txtProduct.Location = new System.Drawing.Point(13, 114);
             this.txtProduct.Multiline = true;
             this.txtProduct.Name = "txtProduct";
             this.txtProduct.Size = new System.Drawing.Size(202, 24);
             this.txtProduct.TabIndex = 20;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(13, 47);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(10, 195);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 15);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Monto a pagar";
             // 
             // label9
             // 
@@ -395,7 +356,7 @@ namespace DSPProyecto
             this.label9.BackColor = System.Drawing.SystemColors.Control;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(10, 111);
+            this.label9.Location = new System.Drawing.Point(10, 98);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 15);
             this.label9.TabIndex = 18;
@@ -407,7 +368,7 @@ namespace DSPProyecto
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(10, 66);
+            this.label8.Location = new System.Drawing.Point(10, 53);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(127, 15);
             this.label8.TabIndex = 17;
@@ -419,7 +380,7 @@ namespace DSPProyecto
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(62, 350);
+            this.label7.Location = new System.Drawing.Point(62, 353);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 15);
             this.label7.TabIndex = 16;
@@ -437,24 +398,14 @@ namespace DSPProyecto
             this.button1.TabIndex = 11;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtPago
-            // 
-            this.txtPago.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPago.Location = new System.Drawing.Point(10, 209);
-            this.txtPago.Multiline = true;
-            this.txtPago.Name = "txtPago";
-            this.txtPago.Size = new System.Drawing.Size(203, 24);
-            this.txtPago.TabIndex = 15;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtNameCustomer
             // 
             this.txtNameCustomer.BackColor = System.Drawing.SystemColors.Window;
             this.txtNameCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNameCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameCustomer.Location = new System.Drawing.Point(13, 84);
+            this.txtNameCustomer.Location = new System.Drawing.Point(13, 71);
             this.txtNameCustomer.Multiline = true;
             this.txtNameCustomer.Name = "txtNameCustomer";
             this.txtNameCustomer.Size = new System.Drawing.Size(202, 24);
@@ -509,7 +460,8 @@ namespace DSPProyecto
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescuento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCantidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -534,20 +486,16 @@ namespace DSPProyecto
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtNameCustomer;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtPago;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown txtCantidad;
         private System.Windows.Forms.TextBox txtProduct;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.NumericUpDown txtDescuento;
     }
 }

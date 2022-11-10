@@ -185,10 +185,11 @@ namespace DSPProyecto
             this.dateTimePicker1.Checked = false;
             this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Default;
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(346, 345);
+            this.dateTimePicker1.Location = new System.Drawing.Point(348, 345);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(247, 20);
             this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label2
             // 
