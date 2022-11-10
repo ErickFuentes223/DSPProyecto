@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,18 @@ namespace DSPProyecto
         {
             ModProduct CambioF = new ModProduct();
             CambioF.Show();
+        }
+
+        private void InventarioAdmin_Load(object sender, EventArgs e)
+        {
+            SqlConnection cnx;
+            cnx = new SqlConnection("Data Source=.;Initial Catalog=FarmaciaDonBoscoDSP;Integrated Security=True");
+            cnx.Open();
+
+            SqlDataAdapter adaptador = new SqlDataAdapter("Select * from productos", cnx);
+            DataTable td = new DataTable();
+            adaptador.Fill(td);
+            dataGridView1.DataSource = td;
         }
     }
 }

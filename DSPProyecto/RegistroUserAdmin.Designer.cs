@@ -29,6 +29,7 @@ namespace DSPProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,12 +44,14 @@ namespace DSPProyecto
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBoxRoles = new System.Windows.Forms.ComboBox();
+            this.txtNombreReg = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtRePassReg = new System.Windows.Forms.TextBox();
             this.txtPassReg = new System.Windows.Forms.TextBox();
             this.txtUserReg = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -213,12 +216,14 @@ namespace DSPProyecto
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.label11);
+            this.splitContainer2.Panel2.Controls.Add(this.comboBoxRoles);
+            this.splitContainer2.Panel2.Controls.Add(this.txtNombreReg);
             this.splitContainer2.Panel2.Controls.Add(this.label10);
             this.splitContainer2.Panel2.Controls.Add(this.label9);
             this.splitContainer2.Panel2.Controls.Add(this.label8);
             this.splitContainer2.Panel2.Controls.Add(this.label7);
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Panel2.Controls.Add(this.txtRePassReg);
             this.splitContainer2.Panel2.Controls.Add(this.txtPassReg);
             this.splitContainer2.Panel2.Controls.Add(this.txtUserReg);
             this.splitContainer2.Panel2.Controls.Add(this.label6);
@@ -243,10 +248,52 @@ namespace DSPProyecto
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 63);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(302, 293);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(18, 235);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 15);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Rol";
+            // 
+            // comboBoxRoles
+            // 
+            this.comboBoxRoles.FormattingEnabled = true;
+            this.comboBoxRoles.Items.AddRange(new object[] {
+            "Administrador",
+            "Usuario"});
+            this.comboBoxRoles.Location = new System.Drawing.Point(19, 253);
+            this.comboBoxRoles.Name = "comboBoxRoles";
+            this.comboBoxRoles.Size = new System.Drawing.Size(196, 21);
+            this.comboBoxRoles.TabIndex = 21;
+            // 
+            // txtNombreReg
+            // 
+            this.txtNombreReg.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreReg.Location = new System.Drawing.Point(19, 84);
+            this.txtNombreReg.Multiline = true;
+            this.txtNombreReg.Name = "txtNombreReg";
+            this.txtNombreReg.Size = new System.Drawing.Size(196, 24);
+            this.txtNombreReg.TabIndex = 20;
             // 
             // label10
             // 
@@ -254,11 +301,11 @@ namespace DSPProyecto
             this.label10.BackColor = System.Drawing.SystemColors.Control;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(16, 190);
+            this.label10.Location = new System.Drawing.Point(17, 63);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(142, 15);
+            this.label10.Size = new System.Drawing.Size(58, 15);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Confirme Contraseña";
+            this.label10.Text = "Nombre";
             // 
             // label9
             // 
@@ -266,7 +313,7 @@ namespace DSPProyecto
             this.label9.BackColor = System.Drawing.SystemColors.Control;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(16, 134);
+            this.label9.Location = new System.Drawing.Point(18, 176);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 15);
             this.label9.TabIndex = 18;
@@ -278,7 +325,7 @@ namespace DSPProyecto
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(16, 75);
+            this.label8.Location = new System.Drawing.Point(18, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 15);
             this.label8.TabIndex = 17;
@@ -290,7 +337,7 @@ namespace DSPProyecto
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(62, 301);
+            this.label7.Location = new System.Drawing.Point(62, 341);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 15);
             this.label7.TabIndex = 16;
@@ -302,30 +349,20 @@ namespace DSPProyecto
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(19, 265);
+            this.button1.Location = new System.Drawing.Point(19, 303);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 33);
             this.button1.TabIndex = 11;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtRePassReg
-            // 
-            this.txtRePassReg.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRePassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRePassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRePassReg.Location = new System.Drawing.Point(19, 209);
-            this.txtRePassReg.Multiline = true;
-            this.txtRePassReg.Name = "txtRePassReg";
-            this.txtRePassReg.Size = new System.Drawing.Size(196, 24);
-            this.txtRePassReg.TabIndex = 15;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtPassReg
             // 
             this.txtPassReg.BackColor = System.Drawing.SystemColors.Window;
             this.txtPassReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassReg.Location = new System.Drawing.Point(19, 152);
+            this.txtPassReg.Location = new System.Drawing.Point(21, 194);
             this.txtPassReg.Multiline = true;
             this.txtPassReg.Name = "txtPassReg";
             this.txtPassReg.Size = new System.Drawing.Size(196, 24);
@@ -336,7 +373,7 @@ namespace DSPProyecto
             this.txtUserReg.BackColor = System.Drawing.SystemColors.Window;
             this.txtUserReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUserReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserReg.Location = new System.Drawing.Point(19, 93);
+            this.txtUserReg.Location = new System.Drawing.Point(21, 139);
             this.txtUserReg.Multiline = true;
             this.txtUserReg.Name = "txtUserReg";
             this.txtUserReg.Size = new System.Drawing.Size(196, 24);
@@ -375,6 +412,7 @@ namespace DSPProyecto
             this.Name = "RegistroUserAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InicioSoya";
+            this.Load += new System.EventHandler(this.RegistroUserAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -414,11 +452,13 @@ namespace DSPProyecto
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtUserReg;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtRePassReg;
         private System.Windows.Forms.TextBox txtPassReg;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNombreReg;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBoxRoles;
     }
 }

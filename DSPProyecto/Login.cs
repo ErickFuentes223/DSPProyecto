@@ -37,7 +37,7 @@ namespace DSPProyecto
             cnx.Open();
 
 
-            SqlCommand cm = new SqlCommand("Select * from usuarios where nickname='"+txtUsername.Text+"' AND contraseña='"+ txtPassword.Text +"'", cnx);
+            SqlCommand cm = new SqlCommand("Select * from usuarios where nickname='"+txtUsername.Text+"' AND contrasena='"+ txtPassword.Text +"'", cnx);
             SqlDataReader dr = cm.ExecuteReader();
 
             if (dr.Read())

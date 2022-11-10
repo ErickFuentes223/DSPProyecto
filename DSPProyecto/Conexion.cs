@@ -26,6 +26,10 @@ namespace DSPProyecto
                 MessageBox.Show("Error!! " + ex, "Farmacia Don Bosco", MessageBoxButtons.OK);
                 Application.Exit();
             }
+            finally
+            {
+                cnx.Close();
+            }
         }
     }
 }
