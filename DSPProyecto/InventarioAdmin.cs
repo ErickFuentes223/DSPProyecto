@@ -45,17 +45,54 @@ namespace DSPProyecto
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            ConfirmDel CambioF = new ConfirmDel();
-            CambioF.Show();
+            SqlConnection cnx;
+            cnx = new SqlConnection("Data Source=.;Initial Catalog=FarmaciaDonBoscoDSP;Integrated Security=True");
+            cnx.Open();
+
+            string producto = txtproducto.Text;
+            string marca = txtNameCustomer.Text;
+            string precio = txtPrecio.Text;
+            string caducidad = dateTimePicker1.Text;
+            string sku = txtStock.Value.ToString();
+
+            SqlCommand cm = new SqlCommand("DELETE productos where id_producto ="+numericUpDown1.Value , cnx);
+
+            cm.ExecuteNonQuery();
         }
 
         private void btnedit_Click(object sender, EventArgs e)
         {
-            ModProduct CambioF = new ModProduct();
-            CambioF.Show();
+            SqlConnection cnx;
+            cnx = new SqlConnection("Data Source=.;Initial Catalog=FarmaciaDonBoscoDSP;Integrated Security=True");
+            cnx.Open();
+
+            string producto = txtproducto.Text;
+            string marca = txtNameCustomer.Text;
+            string precio = txtPrecio.Text;
+            string caducidad = dateTimePicker1.Text;
+            string sku = txtStock.Value.ToString();
+
+            SqlCommand cm = new SqlCommand("Update productos set producto = '"+ producto + "',marca='"+ marca + "',precioUnitario='"+ precio + "',caducidad='"+ caducidad + "',sku='"+ sku + "' where id_producto =" +numericUpDown1.Value, cnx);
+
+            cm.ExecuteNonQuery();
+
+            cnx.Close();
         }
 
         private void InventarioAdmin_Load(object sender, EventArgs e)
+        {
+            mostrarInfoGrid();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            mostrarInfoGrid();
+        }
+
+
+        #region funciones
+
+        public void mostrarInfoGrid()
         {
             SqlConnection cnx;
             cnx = new SqlConnection("Data Source=.;Initial Catalog=FarmaciaDonBoscoDSP;Integrated Security=True");
@@ -66,5 +103,10 @@ namespace DSPProyecto
             adaptador.Fill(td);
             dataGridView1.DataSource = td;
         }
+
+
+        #endregion
+
+
     }
 }

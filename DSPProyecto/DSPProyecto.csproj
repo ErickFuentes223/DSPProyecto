@@ -66,12 +66,6 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModProduct.Designer.cs">
-      <DependentUpon>ModProduct.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroUserAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModProduct.resx">
-      <DependentUpon>ModProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroUserAdmin.resx">
       <DependentUpon>RegistroUserAdmin.cs</DependentUpon>
