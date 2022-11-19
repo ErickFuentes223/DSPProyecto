@@ -137,6 +137,7 @@ namespace DSPProyecto
             this.btnFactura.TabIndex = 8;
             this.btnFactura.Text = "Facturación";
             this.btnFactura.UseVisualStyleBackColor = false;
+            this.btnFactura.Click += new System.EventHandler(this.btnFactura_Click);
             // 
             // btnBodega
             // 

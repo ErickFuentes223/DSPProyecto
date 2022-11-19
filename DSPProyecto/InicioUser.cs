@@ -36,5 +36,12 @@ namespace DSPProyecto
             this.Close();
         }
 
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+            FacturizacionUser CambioF = new FacturizacionUser();
+            CambioF.Show();
+            this.Close();
+
+        }
     }
 }

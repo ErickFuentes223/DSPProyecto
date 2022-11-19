@@ -66,6 +66,12 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturizacionUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturizacionUser.Designer.cs">
+      <DependentUpon>FacturizacionUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroUserAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturizacionUser.resx">
+      <DependentUpon>FacturizacionUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroUserAdmin.resx">
       <DependentUpon>RegistroUserAdmin.cs</DependentUpon>
